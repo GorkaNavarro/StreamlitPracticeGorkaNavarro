@@ -8,7 +8,8 @@ st.set_page_config(layout="wide")
 
 st.title("Gorka Navarro Navarro")
 
-df = pd.read_csv("C:/ICADE/DataViz/airbnb.csv")
+url = "https://raw.githubusercontent.com/GorkaNavarro/StreamlitPracticeGorkaNavarro/refs/heads/main/airbnb.csv"
+df = pd.read_csv(url)
 
 option = st.sidebar.selectbox('Choose a function:',['Home','Listing type - Number of bookings\nCorrelation graph','Reviews - Price graph by Neigbourhood Group','Plot your own graphic'],index=0) #The index 0 thing is so that the default option when the page refreshes is Home
 
